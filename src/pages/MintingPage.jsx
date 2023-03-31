@@ -18,6 +18,8 @@ function MintingPage() {
   const [reason, setReason] = useState("");
   // const [nonce, setNonce] = useState(0);
 
+  // return;
+
   const { isConnected, address } = useAccount();
   const { data } = useBalance({ address: address });
   const { totalSupply, priceWei, isMinting, maxSupply } = useTokenDetails();
